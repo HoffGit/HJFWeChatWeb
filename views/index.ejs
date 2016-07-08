@@ -1,20 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-cn">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <base href="/">
-        <title><%= title %></title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<base href="/">
+	<title><%= title %></title>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <h1>index</h1>
-    </body>
+	<!-- CSS files -->
+	<!-- Bootstrap -->
+	<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Angular-busy -->
+	<link href="lib/angular-busy/dist/angular-busy.min.css" rel="stylesheet">
+	<!-- My Style -->
+	<link href="stylesheets/style.css" rel="stylesheet">
+
+	<!-- JS files -->
+	<!-- jQuery -->
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<!-- Angular component-->
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular-route/angular-route.min.js"></script>
+	<script src="lib/angular-animate/angular-animate.min.js"></script>
+	<script src="lib/angular-busy/dist/angular-busy.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- My component-->
+	<script src="ng/app.js"></script>
+	<script src="ng/controllers.js"></script>
+	<script src="ng/services.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body ng-app="app">
+	<div class="container-fluid" ng-view=""></div>
+</body>
 </html>

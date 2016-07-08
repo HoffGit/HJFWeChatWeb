@@ -32,19 +32,27 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="controllers\wechatMsg.js" />
+    <Compile Include="public\ng\app.js" />
+    <Compile Include="public\ng\controllers.js" />
+    <Compile Include="public\ng\services.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="services\config\index.js" />
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
     <Content Include="config\main.json" />
     <Content Include="config\wechatMenu.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="views\error.ejs" />
+    <Content Include="views\home.ejs" />
     <Content Include="views\index.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="config\" />
     <Folder Include="controllers\" />
     <Folder Include="public\" />
+    <Folder Include="public\ng\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="services\" />
