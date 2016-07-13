@@ -10,16 +10,26 @@ var wechat = require('wechat');
 var wechatApi = require('wechat-api');
 var wechatOAuth = require('wechat-oauth');
 
-// routes controllers services
+// routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+//controllers
 var wechatMsg = require('./controllers/wechatMsg');
-
+//services
 var config = require('./services/config');
 
-
 var app = express();
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // config init
@@ -48,19 +58,6 @@ wechatApi.myApi.createMenu(menuConfig.menu, function (err, result) {
 	console.log(result);
 });
 
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
 //WeChat req
 var wechatConfig = {
 	token: mainConfig.wechat.token,
@@ -79,6 +76,7 @@ app.use('/wechat', wechat(wechatConfig)
     .device_text(wechatMsg.device_text)
     .device_event(wechatMsg.device_event)
     .middlewarify());
+
 
 app.use('/', routes);
 app.use('/users', users);

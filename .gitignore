@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/HJFWeChatWeb/v14
+/bin
+/config
+/node_modules
+/obj/Debug
+/public/lib
+*.dat
+/.vs/config
