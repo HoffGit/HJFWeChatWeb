@@ -3,9 +3,9 @@
 var app = angular.module('app', ['ngRoute', 'ngResource']);
 app.config(['$routeProvider', '$locationProvider', '$resourceProvider',
 	function ($routeProvider, $locationProvider, $resourceProvider) {
-		$routeProvider.when('/', { templateUrl: ('partial/home'), permission: 'none' })
-			.when('/404', { templateUrl: ('partial/404'), permission: 'none' })
-			.otherwise({ redirectTo: '/404' });
+		$routeProvider.when('/', { templateUrl: ('partial/home'), permission: 'none' });
+		$routeProvider.when('/404', { templateUrl: ('partial/404'), permission: 'none' });
+		$routeProvider.otherwise({ redirectTo: '/404' });
 		
 		$locationProvider.html5Mode(true);
 		$resourceProvider.defaults.stripTrailingSlashes = false;// Don't strip trailing slashes from calculated URLs

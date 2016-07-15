@@ -52,6 +52,7 @@ var api = new wechatApi(mainConfig.wechat.appId, mainConfig.wechat.appSecret);
 wechatApi.myApi = api;
 var auth = new wechatOAuth(mainConfig.wechat.appId, mainConfig.wechat.appSecret);
 wechatOAuth.myAuth = auth;
+
 // WeChat menu
 wechatApi.myApi.createMenu(menuConfig.menu, function (err, result) {
 	console.log(err);

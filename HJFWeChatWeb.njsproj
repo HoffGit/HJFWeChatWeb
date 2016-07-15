@@ -44,7 +44,8 @@
     <Content Include="config\main.json" />
     <Content Include="config\wechatMenu.json" />
     <Content Include="package.json" />
-    <Content Include="views\error.ejs" />
+    <Content Include="README.md" />
+    <Content Include="views\404.ejs" />
     <Content Include="views\home.ejs" />
     <Content Include="views\index.ejs" />
   </ItemGroup>
