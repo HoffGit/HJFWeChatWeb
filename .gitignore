@@ -8,5 +8,6 @@
 /node_modules
 /obj/Debug
 /public/lib
+/public/img
 *.dat
 /.vs/config
