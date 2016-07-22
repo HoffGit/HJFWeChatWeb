@@ -4,7 +4,9 @@ var app = angular.module('app', ['ngRoute', 'ngResource']);
 app.config(['$routeProvider', '$locationProvider', '$resourceProvider',
 	function ($routeProvider, $locationProvider, $resourceProvider) {
 		$routeProvider.when('/', { templateUrl: ('partial/home'), permission: 'none' });
-		$routeProvider.when('/company', { templateUrl: ('partial/company'), permission: 'none' });
+		$routeProvider.when('/company/info', { templateUrl: ('partial/company'), permission: 'none' });
+		$routeProvider.when('/company/cultural', { templateUrl: ('partial/cultural'), permission: 'none' });
+		$routeProvider.when('/company/thanks', { templateUrl: ('partial/thanks'), permission: 'none' });	
 		$routeProvider.when('/404', { templateUrl: ('partial/404'), permission: 'none' });
 		$routeProvider.otherwise({ redirectTo: '/404' });
 		

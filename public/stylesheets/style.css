@@ -1,19 +1,17 @@
 * {
 	font-family: '微软雅黑';
+	font-size: 15px;
 }
 
-section#company {
+section#company h4 {
+	text-align: center;
+	font-weight: 600;
 }
 
-	section#company h4 {
-		text-align: center;
-		font-weight: 600;
-	}
+section#company p {
+	text-indent: 2em;
+}
 
-	section#company p {
-		text-indent: 2em;
-	}
-
-	section#company img {
-		width: 100%;
-	}
+section#company img {
+	width: 100%;
+}
