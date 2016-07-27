@@ -3,15 +3,62 @@
 	font-size: 15px;
 }
 
-section#company h4 {
-	text-align: center;
-	font-weight: 600;
+section#company {
 }
 
-section#company p {
-	text-indent: 2em;
+	section#company h4 {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	section#company p {
+		text-indent: 2em;
+	}
+
+	section#company img {
+		width: 100%;
+	}
+
+section#cultural {
 }
 
-section#company img {
-	width: 100%;
+	section#cultural h4 {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	section#cultural .panel h5 {
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	section#cultural .panel .inner-tittle {
+		color: #ff5555;
+		font-size: 16px;
+		font-style: oblique;
+		letter-spacing: 3px;
+	}
+
+section#thanks {
 }
+
+	section#thanks .jumbotron {
+		overflow: hidden;
+		padding: 0 15px;
+	}
+
+		section#thanks .jumbotron h3 {
+			font-weight: 600;
+			font-style: oblique;
+		}
+
+		section#thanks .jumbotron h4 {
+			font-size: 20px;
+			font-weight: 600;
+			font-style: oblique;
+		}
+
+		section#thanks .jumbotron p {
+			font-size: 16px;
+			text-indent: 2em;
+		}
