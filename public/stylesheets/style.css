@@ -45,6 +45,7 @@ section#thanks {
 	section#thanks .jumbotron {
 		overflow: hidden;
 		padding: 0 15px;
+		margin-top: 15px;
 	}
 
 		section#thanks .jumbotron h3 {
