@@ -51,6 +51,7 @@
     <Content Include="views\cultural.ejs" />
     <Content Include="views\home.ejs" />
     <Content Include="views\index.ejs" />
+    <Content Include="views\product.ejs" />
     <Content Include="views\thanks.ejs" />
   </ItemGroup>
   <ItemGroup>

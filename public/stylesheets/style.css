@@ -3,13 +3,27 @@
 	font-size: 15px;
 }
 
-section#company {
+section {
+	min-width: 320px;
 }
 
-	section#company h4 {
-		text-align: center;
-		font-weight: 600;
-	}
+.goto-top {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    height: 31px;
+    background-image: url(../img/common/goto-top.png);
+    background-size: 100% 100%;
+}
+
+.section-title {
+	text-align: center;
+	font-weight: 600;
+}
+
+section#company {
+}
 
 	section#company p {
 		text-indent: 2em;
@@ -21,11 +35,6 @@ section#company {
 
 section#cultural {
 }
-
-	section#cultural h4 {
-		text-align: center;
-		font-weight: 600;
-	}
 
 	section#cultural .panel h5 {
 		font-size: 16px;
@@ -63,3 +72,36 @@ section#thanks {
 			font-size: 16px;
 			text-indent: 2em;
 		}
+
+section#product {
+}
+
+	section#product select {
+		font-size: 15px;
+	}
+
+	section#product div[role="tabpanel"] {
+		display: none;
+	}
+
+	section#product .tab-content .panel h4 {
+		text-align: center;
+	}
+
+	section#product .tab-content .panel .panel-body .logo {
+		width: 280px;
+		height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-bottom: 10px;
+	}
+
+	section#product .tab-content .panel .panel-body p {
+		text-align: left;
+		text-indent: 2em;
+	}
+
+	section#product .tab-content .panel .panel-footer img {
+		width: 100%;
+		margin-bottom: 15px;
+	}
