@@ -53,6 +53,7 @@
     <Content Include="views\index.ejs" />
     <Content Include="views\product.ejs" />
     <Content Include="views\thanks.ejs" />
+    <Content Include="views\welfare.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="config\" />
