@@ -1,6 +1,7 @@
 * {
 	font-family: '微软雅黑';
 	font-size: 15px;
+	color: #34495e;
 }
 
 section {
@@ -9,12 +10,12 @@ section {
 
 .goto-top {
 	position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 34px;
-    height: 31px;
-    background-image: url(../img/common/goto-top.png);
-    background-size: 100% 100%;
+	bottom: 0;
+	right: 0;
+	width: 34px;
+	height: 31px;
+	background-image: url(../img/common/goto-top.png);
+	background-size: 100% 100%;
 }
 
 .section-title {
@@ -104,4 +105,20 @@ section#product {
 	section#product .tab-content .panel .panel-footer img {
 		width: 100%;
 		margin-bottom: 15px;
+	}
+
+section#welfare {
+}
+
+	section#welfare .tab-content .tab-pane .panel {
+		border-top: none;
+		border-radius: 0;
+	}
+
+	section#welfare .tab-content .tab-pane h5 {
+		font-size: 16px;
+	}
+
+	section#welfare .tab-content .tab-pane p {
+		text-indent: 2em;
 	}

@@ -8,6 +8,7 @@ app.config(['$routeProvider', '$locationProvider', '$resourceProvider',
 		$routeProvider.when('/cultural', { templateUrl: ('partial/cultural'), permission: 'none' });
 		$routeProvider.when('/thanks', { templateUrl: ('partial/thanks'), permission: 'none' });
 		$routeProvider.when('/product', { templateUrl: ('partial/product'), controller: 'ProductCtrl', permission: 'none' });
+		$routeProvider.when('/welfare', { templateUrl: ('partial/welfare'), permission: 'none' });
 		$routeProvider.when('/404', { templateUrl: ('partial/404'), permission: 'none' });
 		$routeProvider.otherwise({ redirectTo: '/404' });
 
