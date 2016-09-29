@@ -11,7 +11,7 @@ section {
 .goto-top {
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	width: 34px;
 	height: 31px;
 	background-image: url(../img/common/goto-top.png);
@@ -121,4 +121,8 @@ section#welfare {
 
 	section#welfare .tab-content .tab-pane p {
 		text-indent: 2em;
+	}
+
+	section#welfare .tab-content .tab-pane img {
+		width: 100%;
 	}
