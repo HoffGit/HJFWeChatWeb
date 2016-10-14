@@ -1,6 +1,9 @@
 angular.module('app').controller('IndexCtrl', ['$rootScope', '$scope', '$location',
 	function ($rootScope, $scope, $location) {
 		$scope.onGotoTop = function () {
+			if ($('html, body').is(':animated')) {
+				$('html, body').stop(true, true);
+			}
 			$('html, body').animate({ scrollTop: '0px' }, 1000);
 		};
 	}]);

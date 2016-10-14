@@ -21,7 +21,7 @@ section {
 .section-title {
 	text-align: center;
 	font-weight: 600;
-	color: #227722
+	color: #227722;
 }
 
 section#company {
@@ -74,6 +74,10 @@ section#thanks {
 			font-size: 16px;
 			text-indent: 2em;
 		}
+
+	section#thanks img {
+		width: 100%;
+	}
 
 section#product {
 }
