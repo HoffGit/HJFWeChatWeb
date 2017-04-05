@@ -14,7 +14,7 @@ angular.module('app').controller('ProductCtrl', ['$rootScope', '$scope', '$locat
 			{ name: '金宇', tabId: '#tab-jinyu', panelId: '#panel-jinyu' },
 			{ name: '玉祺麟', tabId: '#tab-yuqilin', panelId: '#panel-yuqilin' },		
 			{ name: '玛吉斯', tabId: '#tab-majisi', panelId: '#panel-majisi' },
-			{ name: '路通', tabId: '#tab-lutong', panelId: '#panel-lutong' },
+			{ name: '陆通', tabId: '#tab-lutong', panelId: '#panel-lutong' },
 			{ name: '玲珑', tabId: '#tab-linglong', panelId: '#panel-linglong' },
 			{ name: '奥力拉', tabId: '#tab-aolila', panelId: '#panel-aolila' },
 			{ name: '华盛', tabId: '#tab-huasheng', panelId: '#panel-huasheng' },
