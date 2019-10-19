@@ -1,4 +1,4 @@
-﻿var express = require('express');
+var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -80,6 +80,7 @@ app.use('/wechat', wechat(wechatConfig)
 
 
 app.use('/', routes);
+app.use('/adv', routes);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
